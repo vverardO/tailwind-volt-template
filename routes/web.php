@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Volt::route('/acessar', 'login')->name('login');
+Volt::route('/registrar', 'register')->name('register');
+Volt::route('/bem-vindo', 'welcome')->name('welcome');
+Volt::route('/perfil', 'profile')->name('profile');
